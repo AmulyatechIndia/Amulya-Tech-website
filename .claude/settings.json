@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "WebSearch",
+      "WebFetch(domain:pixabay.com)",
+      "Bash(curl -sL -o laptop.jpg -w \"HTTP:%{http_code} SIZE:%{size_download}\\\\n\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://cdn.pixabay.com/photo/2020/06/23/14/23/laptop-5332720_1280.jpg\")",
+      "Bash(curl -sL -o ups_candidate.jpg -w \"HTTP:%{http_code} SIZE:%{size_download}\\\\n\" -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://cdn.pixabay.com/photo/2018/08/31/17/33/power-supply-unit-3645170_1280.jpg\")",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(cp workstation_cand.jpg workstation-photo.jpg)",
+      "Bash(cp scanner_cand.jpg scanner.jpg)",
+      "Bash(cp printer_cand2.jpg printer.jpg)",
+      "Bash(rm -f ups_candidate.jpg monitor_cand.jpg printer_cand3.jpg workstation_cand.jpg scanner_cand.jpg printer_cand2.jpg)"
+    ]
+  }
+}
